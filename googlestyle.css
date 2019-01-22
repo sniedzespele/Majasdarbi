@@ -1,0 +1,78 @@
+body {
+  font-family: "Arial", Helvetica, sans-serif; margin: 20px
+}
+header {
+	float: right}
+
+.logo {
+	position: absolute;
+  top: 30%;
+  left: 43%;
+  }
+
+.container-form {position: absolute;
+  top: 45%;
+  left: 35%;
+  }
+
+  .typing{
+  	width: 220px
+  	height:40px;}
+  
+.link3{  position: absolute;
+    right: 0;
+    bottom: 0;
+margin: 20px;
+}
+
+.link2 {
+    float: left;
+    position: relative;
+    left: 20px;
+    top: 700px;
+    text-decoration: none;
+}
+
+.container {
+  position: relative;
+}
+.dropbtn {
+  background-color:white;
+  color: black;
+  font-size: 16px;
+  position: absolute;
+    right: 0;
+    bottom: 0;
+}
+ 
+}
+
+.dropup {
+  position: relative;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  
+}
+
+.dropup-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  bottom: 50px;
+}
+
+.dropup-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropup-content a:hover {background-color: white;}
+
+.dropup:hover .dropup-content {
+  display: block;
+}
