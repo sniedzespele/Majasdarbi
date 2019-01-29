@@ -7,7 +7,7 @@
   margin-right: auto;
 }
     body{
-    	background-color: #6f7f90;
+    	background-color: #63575b;
     margin:0px;
     font-family: Impact, Helvetica, Arial;
     }
@@ -26,8 +26,8 @@
     margin-left: 0px;
     }
     .container-fluid{
-    	padding-left: 0px;
-    	padding-right: 0px;
+    	padding-left: 5px;
+    	padding-right: 5px;
     }
     i{
     	font-size:36px;
@@ -107,13 +107,13 @@ th, td {
 }
 
 .flip-card-front {
-  background-color: #bbb;
+  background-color: #63575b;
   color: black;
   z-index: 2;
 }
 
 .flip-card-back {
-  background-color: #2980b9;
+  background-color: #63575b;
   color: white;
   transform: rotateY(180deg);
   z-index: 1;
@@ -160,7 +160,7 @@ color: #7f7b7b;
 	left:50%;
 }
 .flip-card-back{
-	background-color: #6f7f90;
+	background-color: #63575b;
 	padding: 50px;
 }
 .card-block{
@@ -168,4 +168,7 @@ color: #7f7b7b;
 }
 a{
 	color: grey;
+}
+.accordion{
+	padding: 30px;
 }
