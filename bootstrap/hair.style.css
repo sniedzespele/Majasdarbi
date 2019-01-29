@@ -65,17 +65,17 @@ th, td {
 }
 .dryer-icon{
 	position:relative;
-	left: 370px;
+	left: 300px;
 	top: -40px;
 }
 .coloring{
 	position:relative;
-	left: 390px;
+	left: 310px;
 	top: -30px;
 }
 .cut {
 	position:relative;
-	left: 400px;
+	left: 320px;
 	top: -30px;
 }
 .flip-card {
@@ -157,7 +157,8 @@ color: #7f7b7b;
 .nbar-bottom{
 	background-color: none;
 	position: relative;
-	left:50%;
+	padding-left: 60px;
+	margin-left: 200px;
 }
 .flip-card-back{
 	background-color: #63575b;
@@ -171,4 +172,11 @@ a{
 }
 .accordion{
 	padding: 30px;
+}
+.row{
+	padding: 30px;
+}
+.carousel-caption{
+	color: #c5ba45;
+	text-shadow: 1px 1px black;
 }
