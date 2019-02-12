@@ -1,5 +1,4 @@
-
-jautājums = input(" Vai izpildijāt mājasdarbus? Jā/Nē: ")
+question = input(" Vai izpildijāt mājasdarbus? Jā/Nē: ")
 while True:
     if question.lower() == "jā" or question.lower() == "j":
         print("Labi darīts!")
