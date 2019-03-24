@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    {% include 'top_menu.html' %}
+    {% if article.main_image %}
+        <img src="/static/uploads/{{ article.main_image }}" style="max-height: 250px"/>
+    {% endif %}
+    {{ article.content|safe }}
+{% endblock %}

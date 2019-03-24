@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    {% include 'top_menu.html' %}
+    <h1>Login form</h1>
+
+    {% if status %}
+        <div class="result-block">
+            LOGIN STATUS: {{ status }}
+        </div>
+    {% endif %}
+
+    <div class="login-form">
+        <form method="post">
+            <label for="name">E.MAIL: </label>
+            <input type="text" name="email" value=""/><br/>
+            <label for="password">PASSWORD: </label>
+            <input type="password" name="password" value=""/><br/>
+            <input type="submit" value="LOGIN NOW!"/>
+        </form>
+    </div>
+
+
+    </body>
+{% endblock %}

@@ -1,0 +1,85 @@
+body {
+  font-family: "Lucida Console", Monaco, monospace;
+  border-style: hidden;
+  border-radius: 12px;
+  background-color: #f4f4e7;
+  margin-top: 90px;
+  margin-bottom: 60px;
+  margin-right: 60px;
+  margin-left: 60px;
+}
+
+ html {background-image: url(back.png);
+      height: 100%;
+  background-size: cover;
+ }
+
+nav{
+  border-radius: 12px ;
+}
+.navbar-dark{
+	background-color: grey;
+}
+.row{
+	 margin-left: auto;
+	 margin-right: auto;
+	 padding: 40px;
+}
+
+.profil {
+  float: left; margin-right: 18px;
+   }
+
+.outset {border-style: hidden;
+	border-radius: 12px;
+margin: 30px;
+background-color: white;
+}
+
+.btn-primary{ background-color: grey; border-color: #2f2e2e; }
+
+.container-fluid{
+	background-color: white
+}
+
+iframe {
+  width: 90%;
+}
+
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 10px;
+  float: left;
+  width: 19%;
+  border-style: outset;
+  margin: 7px;
+}
+
+.clearfix: {
+  content: "";
+  display: table;
+  clear: both;
+}
+.table {width: 95%;
+margin: 15px;}
+
+
+.kotntakts{ margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}

@@ -1,0 +1,53 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    {% include 'top_menu.html' %}
+    <h1>Editor</h1>
+    <p>Click on title to view or use edit button</p>
+    <table border="1">
+        <thead>
+        <tr>
+            <td>Article ID</td>
+            <td>Article Title</td>
+            <td>Main image</td>
+            <td>Edit article</td>
+        </tr>
+        </thead>
+        <tbody>
+        {% for article in articles %}
+            <tr>
+                <td>{{ article.id }}</td>
+                <td><a target="_blank" href="/viewer/{{ article.id }}">{{ article.title }}</a></td>
+                <td>{{ article.main_image }}</td>
+                <td><a href="/editor/{{ article.id }}">Edit this article</a></td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <h2>Add or edit article below</h2>
+    <form method="post" enctype="multipart/form-data">
+        <label for="title">Title: </label>
+        <input type="text" name="title" value="{{ article.title }}"/><br/><br/>
+        <label for="main_image">Main image: </label>
+        <input type="file" name="main_image"/><br/><br/>
+        <label for="content">Content: </label>
+        <div class="editor-wrap">
+            <textarea name="content" id="editor">{{ article.content }}</textarea>
+        </div>
+        <input type="submit" name="submit" value="Add/Update!"/>
+    </form>
+
+    <script src="https://cdn.ckeditor.com/ckeditor5/12.0.0/classic/ckeditor.js"></script>
+    <script>
+        let theEditor;
+        ClassicEditor
+            .create(document.querySelector('#editor'))
+            .then(editor => {
+                theEditor = editor; // Save for later use.
+            })
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
+{% endblock %}
